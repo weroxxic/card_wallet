@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@android:color/white">
+
+    <!-- Heading -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Important Information"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingBottom="16dp" />
+
+    <!-- Data Security Information -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Data Security:"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="All data saved within this application is stored locally on your device. The application does not require an internet connection, ensuring that your data remains secure and private."
+        android:paddingBottom="8dp" />
+
+    <!-- Card Storage Information -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Card Storage:"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="This application allows you to store various types of cards, such as your Aadhaar card, PAN card, driving license, and more."
+        android:paddingBottom="8dp" />
+
+    <!-- Credit/Debit Card Storage Information -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Credit/Debit Card Storage:"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="While it is technically possible to store information related to credit or debit cards, it is not recommended. Should you choose to do so, we strongly advise against storing the back side of the card, which contains sensitive information such as the security code (CVV)."
+        android:paddingBottom="8dp"/>
+
+    <!-- PIN Code Reminder -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PIN Code Reminder:"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please ensure that you remember the PIN code you set for this application. If the PIN is forgotten, there is no option to recover it. The only way to regain access would be to clear the app's data, which will allow you to create a new PIN."
+        android:paddingBottom="8dp" />
+
+    <!-- Ad-Free Experience -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ad-Free Experience:"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="This application is completely ad-free, providing you with a seamless and uninterrupted user experience."
+        android:paddingBottom="12dp" />
+
+    <!-- I Understand Button -->
+    <Button
+        android:id="@+id/understandButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="I Understand" />
+
+    <!-- Thank You Text -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thank you for installing Card Wallet"
+        android:textSize="12sp"
+        android:gravity="center"
+        android:paddingTop="2dp" />
+</LinearLayout>

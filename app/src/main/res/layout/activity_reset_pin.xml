@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    android:background="@drawable/blurred">
+
+    <TextView
+        android:id="@+id/instructionTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter New PIN"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:padding="8dp" />
+    <!-- PIN Input Fields -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="24dp">
+
+        <EditText
+            android:id="@+id/pin1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:inputType="number"
+            android:maxLength="1"
+            android:background="@drawable/rounded_edittext_background"
+            android:importantForAccessibility="no"
+            android:focusable="false"
+            android:cursorVisible="false"
+            android:textColor="@android:color/black"
+            android:elevation="4dp"
+            android:padding="12dp"/>
+
+        <EditText
+            android:id="@+id/pin2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:inputType="number"
+            android:maxLength="1"
+            android:background="@drawable/rounded_edittext_background"
+            android:importantForAccessibility="no"
+            android:focusable="false"
+            android:cursorVisible="false"
+            android:textColor="@android:color/black"
+            android:elevation="4dp"
+            android:padding="12dp"
+            android:layout_marginStart="8dp"/>
+
+        <EditText
+            android:id="@+id/pin3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:inputType="number"
+            android:maxLength="1"
+            android:background="@drawable/rounded_edittext_background"
+            android:importantForAccessibility="no"
+            android:focusable="false"
+            android:cursorVisible="false"
+            android:textColor="@android:color/black"
+            android:elevation="4dp"
+            android:padding="12dp"
+            android:layout_marginStart="8dp"/>
+
+        <EditText
+            android:id="@+id/pin4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:inputType="number"
+            android:maxLength="1"
+            android:background="@drawable/rounded_edittext_background"
+            android:importantForAccessibility="no"
+            android:focusable="false"
+            android:cursorVisible="false"
+            android:textColor="@android:color/black"
+            android:elevation="4dp"
+            android:padding="12dp"
+            android:layout_marginStart="8dp"/>
+    </LinearLayout>
+
+    <!-- Number Pad centered on the screen -->
+    <GridLayout
+        android:id="@+id/numericKeypad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <!-- Buttons 1-9 -->
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text="1"
+            android:textSize="24sp"
+            android:onClick="onNumberClick"
+            android:background="@drawable/rounded_edittext_background"/>
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text="2"
+            android:textSize="24sp"
+            android:onClick="onNumberClick"
+            android:background="@drawable/rounded_edittext_background"/>
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text="3"
+            android:textSize="24sp"
+            android:onClick="onNumberClick"
+            android:background="@drawable/rounded_edittext_background"/>
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text="4"
+            android:textSize="24sp"
+            android:onClick="onNumberClick"
+            android:background="@drawable/rounded_edittext_background"/>
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text="5"
+            android:textSize="24sp"
+            android:onClick="onNumberClick"
+            android:background="@drawable/rounded_edittext_background"/>
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text="6"
+            android:textSize="24sp"
+            android:onClick="onNumberClick"
+            android:background="@drawable/rounded_edittext_background"/>
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text="7"
+            android:textSize="24sp"
+            android:onClick="onNumberClick"
+            android:background="@drawable/rounded_edittext_background"/>
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text="8"
+            android:textSize="24sp"
+            android:onClick="onNumberClick"
+            android:background="@drawable/rounded_edittext_background"/>
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text="9"
+            android:textSize="24sp"
+            android:onClick="onNumberClick"
+            android:background="@drawable/rounded_edittext_background"/>
+
+        <!-- Enter Button -->
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/enterButton"
+            android:text="Enter"
+            android:textSize="24sp"
+            android:onClick="onEnterClick"
+            android:background="@drawable/rounded_edittext_background"/>
+
+        <!-- Button 0 -->
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text="0"
+            android:textSize="24sp"
+            android:onClick="onNumberClick"
+            android:background="@drawable/rounded_edittext_background"/>
+
+        <!-- Backspace Button -->
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text="⌫"
+            android:textSize="24sp"
+            android:onClick="onBackspaceClick"
+            android:background="@drawable/rounded_edittext_background"/>
+    </GridLayout>
+
+</LinearLayout>
