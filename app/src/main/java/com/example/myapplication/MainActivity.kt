@@ -104,7 +104,7 @@ class MainActivity : AppCompatActivity() {
         database = CardDatabase.getDatabase(this)
         cardDao = database.cardDao()
 
-        cardAdapter = CardAdapter(emptyList())
+        cardAdapter = CardAdapter(emptyList(), this)
         recyclerView.adapter = cardAdapter
 
         // Add space between items

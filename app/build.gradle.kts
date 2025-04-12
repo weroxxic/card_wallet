@@ -75,6 +75,8 @@ dependencies {
     implementation("androidx.cardview:cardview:1.0.0") //to achieve card layout
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
     implementation("androidx.room:room-runtime:$room_version")
+    implementation ("com.itextpdf:kernel:7.1.17")
+    implementation ("com.itextpdf:layout:7.1.17")
     annotationProcessor("androidx.room:room-compiler:$room_version")
     // To use Kotlin annotation processing tool (kapt)
     kapt("androidx.room:room-compiler:$room_version")
